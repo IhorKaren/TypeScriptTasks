@@ -9,7 +9,7 @@ enum Week {
 }
 
 function isWeekend(day: string): void {
-  if (day === "Saturday" || day === "Sunday") {
+  if (day === Week.Saturday || day === Week.Sunday) {
     console.log(true);
     return;
   }
