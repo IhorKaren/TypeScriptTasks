@@ -1,6 +1,6 @@
 /*
-  У вас є перелік UserRole, який використовується для класифікації користувачів у вашому додатку.
-  Ви хочете створити об'єкт RoleDescription, який зіставлятиме кожну роль користувача з її описом.
+ You have a UserRole enumeration that is used to classify users in your application.
+  You want to create a RoleDescription object that maps each user role to its description.
 */
 
 export enum UserRole {
@@ -9,7 +9,6 @@ export enum UserRole {
   guest = "guest",
 }
 
-// Замініть наступний код на версію за допомогою Record
 const RoleDescription: Record<UserRole, string> = {
   [UserRole.admin]: "Admin User",
   [UserRole.editor]: "Editor User",
